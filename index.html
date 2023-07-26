@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WIVIANA Clientes</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+
+    <button id="botao-alterar-tema">
+      <img src="img/sun.svg" alt="imagem do sol" class="imagem-botao">
+    </button>
+
+  </header>
+  <form action="index.php" method="POST">
+    <div class="campo">
+      <h1 id="titulos"> Registro de Atendimento</h1>
+      <P id="subtitulo"> Complete as respectivas informações</P>
+    </div>
+    
+    <section class="formulario">
+      <div class="campo">
+        <label for="loja"> <strong>Loja</strong></label>
+        <select name="loja" id="loja">
+          <option selected disabled value="">Selecione</option>
+          <option value="Registro-SA">Registro-SA</option>
+          <option value="TiraSenha">TiraSenha</option>
+          <option value="DanitaGrafica">DanitaGrafica</option>
+        </select>
+      </div>
+      
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome"> <strong>Nome:</strong></label>
+          <input type="text" name="nome" id="nome" required>
+        </div>
+        
+        <div class="campo">
+          <label for="telefone"><strong>Whatsapp</strong></label>
+          <input type="text" name="telefone" id="Telefone" required>
+        </div>
+        
+        <div class="campo">
+          <label for="conheceuLoja"> <strong>Como Conheceu a loja?</strong></label>
+          <select name="conheceuLoja" id="conheceuLoja">
+            <option selected disabled value="">Selecione</option>
+            <option value="Google">Google</option>
+            <option value="Recomendação de terceiros">Recomendação de terceiros</option>
+            <option value="Cliente recorrente">Cliente recorrente</option>
+          </select>
+        </div>
+      </fieldset>
+      
+      <div class="campo">
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      
+      <div class="campo">
+        <label for="data"><strong>Data:</strong></label>
+        <input type="date" name="data" id="data" required>
+      </div>
+      
+      <button class="botao" name="submit" type="submit">Concluir</button>
+    </section>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>

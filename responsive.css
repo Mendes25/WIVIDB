@@ -1,0 +1,32 @@
+
+@media screen and (max-width: 768px) {
+    
+    body {
+      font-size: 16px;
+    }
+  
+    
+    .campo {
+      margin-bottom: 0.5rem;
+    }
+  
+    .formulario {
+      width: 90%;
+    }
+  
+    
+    .formulario {
+      padding: 10px;
+      margin-top: 20px;
+    }
+  
+    
+    .botao {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 10px;
+      }
+    
+  }
+  
